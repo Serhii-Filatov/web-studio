@@ -1,0 +1,43 @@
+:root {
+  /* FONTS */
+  --first-font: 'Roboto';
+  --second-font: 'Raleway';
+
+  /* TEXT COLORS */
+
+  /* BACKGROUND COLORS */
+
+  /* OTHERS */
+}
+
+/* * =================== COMMON STYLES ==================== * */
+
+body {
+  font-family: var(--first-font, sans-serif);
+  font-size: 16px;
+}
+
+.link {
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+/* * ====================================================== * */
+
+/* * ===================== COMPONENTS ===================== * */
+/* BUTTON */
+.btn {
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+}
+
+/* * ====================================================== * */
