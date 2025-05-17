@@ -1,3 +1,3 @@
-# web-studio
+# Web Studio
 
-# HTML
+# WebStudio (v3.0 с элементами v2.1)

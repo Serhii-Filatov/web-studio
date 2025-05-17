@@ -4,23 +4,36 @@
   --second-font: 'Raleway';
 
   /* TEXT COLORS */
+  --brand-accent-color: #2196f3; /* iris */
+  --slate: #434455;
+  --light-slate: #8e8f99;
 
   /* BACKGROUND COLORS */
+  --navy-blue: #2e2f42;
+  --cloud: #f4f4fd;
+  --white: #ffffff;
+  --grey: rgba(46, 47, 66, 0.7);
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --dairy: #fcfcfc;
 
   /* OTHERS */
+  --active-btn-color: #188ce8; /* ocean */
+  --green: #31d0aa;
+  --cornflower: #e7e9fc;
 }
 
 /* * =================== COMMON STYLES ==================== * */
 
 body {
-  font-family: var(--first-font, sans-serif);
+  font-family: var(--first-font), sans-serif;
   font-size: 16px;
+  color: var(--slate);
+  background-color: var(--white);
 }
 
 .link {
   font-family: inherit;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .list {
@@ -30,14 +43,160 @@ body {
 /* * ====================================================== * */
 
 /* * ===================== COMPONENTS ===================== * */
-/* BUTTON */
+/* BUTTONS */
 .btn {
   font-family: inherit;
-  background-color: transparent;
+  font-size: 16px;
+  text-align: center;
+
   cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
+  background-color: var(--brand-accent-color);
+}
+
+/* SECTIONS */
+.section-title {
+  font-family: var(--first-font), sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--navy-blue);
+}
+
+.section-sub-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.section-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
 }
 
 /* * ====================================================== * */
+
+/* * ======================= HEADER ======================= * */
+.logo {
+  font-family: var(--second-font), sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brand-accent-color);
+}
+.logo-dark-mode {
+  color: var(--navy-blue);
+}
+.logo-light-mode {
+  color: var(--cloud);
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--brand-accent-color);
+}
+
+.menu-current {
+  color: var(--brand-accent-color);
+}
+
+.header-contact {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--brand-accent-color);
+}
+/* * ====================================================== * */
+
+/* * ===================== PAGE STUDIO ==================== * */
+/* HERO SECTION */
+.hero-section {
+  background-color: var(--navy-blue);
+}
+
+.main-title {
+  font-family: var(--first-font), sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--white);
+}
+
+.modal-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background-color: var(--brand-accent-color);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--active-btn-color);
+}
+/* OUR FEATURE SECTION */
+
+/* GALLERY SECTION */
+
+/* OUR TEAM SECTION */
+.our-team-section {
+  background-color: var(--cloud);
+}
+
+.employee-name {
+  text-align: center;
+}
+
+.employee-position {
+  text-align: center;
+}
+/* * ====================================================== * */
+
+/* * =================== PAGE PORTFOLIO =================== * */
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--navy-blue);
+  background-color: var(--cloud);
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--white);
+  background-color: var(--brand-accent-color);
+}
+/* * ====================================================== * */
+
+/* * ======================= FOOTER ======================= * */
+.footer {
+  background-color: var(--navy-blue);
+}
+
+.footer-text {
+  color: var(--cloud);
+}
