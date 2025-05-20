@@ -23,12 +23,30 @@
 }
 
 /* * =================== COMMON STYLES ==================== * */
-
 body {
   font-family: var(--first-font), sans-serif;
   font-size: 16px;
   color: var(--slate);
   background-color: var(--white);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
 }
 
 .link {
@@ -45,7 +63,6 @@ body {
 /* * ===================== COMPONENTS ===================== * */
 /* BUTTONS */
 .btn {
-  font-family: inherit;
   font-size: 16px;
   text-align: center;
 
