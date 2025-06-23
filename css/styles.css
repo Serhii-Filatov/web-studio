@@ -99,9 +99,18 @@ img {
   color: var(--slate);
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 /* * ====================================================== * */
 
 /* * ======================= HEADER ======================= * */
+.header {
+  outline: 3px solid tomato;
+}
+
 .logo {
   font-family: var(--second-font), sans-serif;
   font-weight: 800;
@@ -153,6 +162,11 @@ img {
 }
 
 .main-title {
+  /*margin: 0 auto;*/
+  /*max-width: 496px;*/
+
+  /*padding-top: 188px;*/
+
   font-family: var(--first-font), sans-serif;
   font-weight: 700;
   font-size: 56px;
